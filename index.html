@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js" defer></script> 
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- The popup -->    
+<div id="myModal">
+    <div id="modalContent">
+        <h2>Redagavimo forma</h2>
+
+        <label>Modelis</label>
+        <input class="input" id="editName">
+
+        <label>Pagaminimo data</label>
+        <input class="input" id="editYear">
+
+        <label>Spalva</label>
+        <input class="input" id="editColor">
+
+        <label>Kuro tipas</label>
+        <select id="editFuelType">
+            <option>Kuro tipas:</option>
+            <option>Benzinas</option>
+            <option>Dyzelis</option>
+        </select>
+        <button id="editCar">Redaguoti</button>
+        <button id="closeForm" onclick="closeForm()">Uždaryti</button>
+    </div>
+</div>
+ 
+<div class="wrap">
+    <div class="form">
+        <input id="modelName" placeholder="Modelis">
+        <input id="modelYear" placeholder="Pagaminimo data">
+        <input id="modelColor" placeholder="Spalva">
+        <select id="modelFuelType">
+            <option>Kuro tipas:</option>
+            <option>Benzinas</option>
+            <option>Dyzelis</option>
+        </select>
+        <button id="addCarInfo">Prideti</button>
+    </div>
+
+    <div class="carInfo">
+        <button id="allCar">Visi automobiliai</button>
+        <button id="deselCar">Dyzeliniai automobiliai</button>
+        <button id="petrolCar">Benzininiai automobiliai</button>
+        <table> 
+            <thead>
+                <tr>
+                    <th>Modelis</th>
+                    <th>Pagaminimo data</th>
+                    <th>Spalva</th>
+                    <th>Kuro tipas</th>
+                    <th>Veiksmas</th>
+                </tr>
+            </thead>
+            <tbody id="carTable">
+                <tr>
+                </tr>
+            </tbody>
+        </table>  
+    </div>
+</div>
+ 
+</body>
+</html>
